@@ -7,6 +7,9 @@
 *.o
 *.obj
 
+# Compiled pattern files
+*.mpa
+
 # Precompiled Headers
 *.gch
 *.pch
