@@ -9,6 +9,7 @@ TestItem::TestItem()
 TestItem::~TestItem()
 {
     delete run_strategy;
+    delete pass_fail_strategy;
 }
 
 TestItem &TestItem::PrintTestItemMembers()
