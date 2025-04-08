@@ -8,11 +8,15 @@ int main()
 
     TestItem()
         .setRunStrategy(new RunPattern())
-        .executeRun();
+        .setPassFailStrategy(new FunctionalPassFail())
+        .executeRun()
+        .executePassFail();
 
     TestItem()
         .setRunStrategy(new RunDcMeasurement())
-        .executeRun();
+        .setPassFailStrategy(new RangePassFail())
+        .executeRun()
+        .executePassFail();
 
     return 0;
 }
