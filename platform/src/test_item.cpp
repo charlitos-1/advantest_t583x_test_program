@@ -11,6 +11,14 @@ TestItem::~TestItem()
     delete run_strategy;
 }
 
+TestItem &TestItem::PrintTestItemMembers()
+{
+    std::cout << "TestItem members:" << std::endl;
+    std::cout << "Run strategy: " << (run_strategy ? typeid(*run_strategy).name() : "None") << std::endl;
+    std::cout << "Pass/Fail strategy: " << (pass_fail_strategy ? typeid(*pass_fail_strategy).name() : "None") << std::endl;
+    return *this;
+}
+
 TestItem &TestItem::setRunStrategy(RunStrategy *strategy)
 {
     if (run_strategy != nullptr)

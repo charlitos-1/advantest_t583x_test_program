@@ -13,6 +13,7 @@ private:
 public:
     TestItem();
     ~TestItem();
+    TestItem &PrintTestItemMembers();
     TestItem &setRunStrategy(RunStrategy *strategy);
     TestItem &executeRun();
     TestItem &setPassFailStrategy(PassFailStrategy *strategy);

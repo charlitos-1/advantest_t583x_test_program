@@ -18,5 +18,10 @@ int main()
         .executeRun()
         .executePassFail();
 
+    TestItem()
+        .setRunStrategy(new RunDcMeasurement())
+        .setPassFailStrategy(new RangePassFail())
+        .PrintTestItemMembers();
+
     return 0;
 }
