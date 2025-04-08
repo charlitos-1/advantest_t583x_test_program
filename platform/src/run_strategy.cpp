@@ -1,9 +1,9 @@
 #include "run_strategy.hpp"
 
-void RunPattern::run() {
-    std::cout << "Running pattern strategy..." << std::endl;
+void RunPattern::run(TestItem* test_item) {
+    std::cout << "Running pattern strategy on TestItem: " << test_item << std::endl;
 }
 
-void RunDcMeasurement::run() {
-    std::cout << "Running DC measurement strategy..." << std::endl;
+void RunDcMeasurement::run(TestItem* test_item) {
+    std::cout << "Running DC measurement strategy on TestItem: " << test_item << std::endl;
 }

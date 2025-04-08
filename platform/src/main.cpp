@@ -10,8 +10,8 @@ int main() {
         .executeRun();
 
     TestItem()
-    .setRunStrategy(new RunDcMeasurement())
-    .executeRun();
+        .setRunStrategy(new RunDcMeasurement())
+        .executeRun();
 
     return 0;
 }

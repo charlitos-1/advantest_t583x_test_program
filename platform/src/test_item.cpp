@@ -18,7 +18,7 @@ TestItem& TestItem::setRunStrategy(RunStrategy* strategy) {
 
 TestItem& TestItem::executeRun() {
     if (run_strategy != nullptr) {
-        run_strategy->run();
+        run_strategy->run(this); // Pass the current TestItem instance
     } else {
         std::cout << "No run strategy set." << std::endl;
     }

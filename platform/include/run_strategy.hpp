@@ -1,19 +1,20 @@
 #include <iostream>
 
+class TestItem; // Forward declaration to avoid circular dependency
+
 class RunStrategy {
 public:
     virtual ~RunStrategy() = default;
 
-    // Method to be implemented by derived classes
-    virtual void run() = 0;
+    virtual void run(TestItem* test_item) = 0;
 };
 
 class RunPattern : public RunStrategy {
 public:
-    void run() override;
+    void run(TestItem* test_item) override;
 };
 
 class RunDcMeasurement : public RunStrategy {
 public:
-    void run() override;
+    void run(TestItem* test_item) override;
 };
