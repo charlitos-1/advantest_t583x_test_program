@@ -4,8 +4,6 @@
 
 int main()
 {
-    printf("A basic test program designed to run on Advantest t583x platforms.\n");
-
     TestItem()
         .setRunStrategy(new RunPattern())
         .setPassFailStrategy(new FunctionalPassFail())
@@ -17,11 +15,6 @@ int main()
         .setPassFailStrategy(new RangePassFail())
         .executeRun()
         .executePassFail();
-
-    TestItem()
-        .setRunStrategy(new RunDcMeasurement())
-        .setPassFailStrategy(new RangePassFail())
-        .PrintTestItemMembers();
 
     return 0;
 }

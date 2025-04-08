@@ -1,4 +1,5 @@
 #include "pass_fail_strategy.hpp"
+#include "test_item.hpp"
 
 void FunctionalPassFail::pass_fail(TestItem *test_item)
 {

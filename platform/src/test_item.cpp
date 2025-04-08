@@ -13,9 +13,10 @@ TestItem::~TestItem()
 
 TestItem &TestItem::PrintTestItemMembers()
 {
-    std::cout << "TestItem members:" << std::endl;
-    std::cout << "Run strategy: " << (run_strategy ? typeid(*run_strategy).name() : "None") << std::endl;
-    std::cout << "Pass/Fail strategy: " << (pass_fail_strategy ? typeid(*pass_fail_strategy).name() : "None") << std::endl;
+    std::cout << "\t" << "--------------------------------" << std::endl;
+    std::cout << "\t" << "Run strategy: " << (run_strategy ? typeid(*run_strategy).name() : "None") << std::endl;
+    std::cout << "\t" << "Pass/Fail strategy: " << (pass_fail_strategy ? typeid(*pass_fail_strategy).name() : "None") << std::endl;
+    std::cout << std::endl;
     return *this;
 }
 

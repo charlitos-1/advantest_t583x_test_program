@@ -1,4 +1,5 @@
 #include "run_strategy.hpp"
+#include "test_item.hpp"
 
 void RunPattern::run(TestItem *test_item)
 {
