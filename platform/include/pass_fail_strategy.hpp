@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include "test_item.hpp"
 
 class TestItem; // Forward declaration to avoid circular dependency
 
