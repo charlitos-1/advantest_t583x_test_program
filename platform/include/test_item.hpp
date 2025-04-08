@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include "run_strategy.hpp"
 

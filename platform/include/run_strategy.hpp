@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 
 class TestItem; // Forward declaration to avoid circular dependency
