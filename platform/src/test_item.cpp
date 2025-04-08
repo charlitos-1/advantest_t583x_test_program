@@ -1,25 +1,33 @@
 #include "test_item.hpp"
 
-TestItem::TestItem() {
+TestItem::TestItem()
+{
     run_strategy = nullptr;
 }
 
-TestItem::~TestItem() {
+TestItem::~TestItem()
+{
     delete run_strategy;
 }
 
-TestItem& TestItem::setRunStrategy(RunStrategy* strategy) {
-    if (run_strategy != nullptr) {
+TestItem &TestItem::setRunStrategy(RunStrategy *strategy)
+{
+    if (run_strategy != nullptr)
+    {
         delete run_strategy;
     }
     run_strategy = strategy;
     return *this;
 }
 
-TestItem& TestItem::executeRun() {
-    if (run_strategy != nullptr) {
+TestItem &TestItem::executeRun()
+{
+    if (run_strategy != nullptr)
+    {
         run_strategy->run(this); // Pass the current TestItem instance
-    } else {
+    }
+    else
+    {
         std::cout << "No run strategy set." << std::endl;
     }
     return *this;
