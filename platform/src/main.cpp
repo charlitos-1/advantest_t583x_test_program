@@ -5,16 +5,16 @@
 int main()
 {
     TestItem()
-        .setRunStrategy(new RunPattern())
-        .setPassFailStrategy(new FunctionalPassFail())
-        .executeRun()
-        .executePassFail();
+        .SetRunStrategy(new RunPattern())
+        .SetPassFailStrategy(new FunctionalPassFail())
+        .ExecuteRun()
+        .ExecutePassFail();
 
     TestItem()
-        .setRunStrategy(new RunDcMeasurement())
-        .setPassFailStrategy(new RangePassFail())
-        .executeRun()
-        .executePassFail();
+        .SetRunStrategy(new RunDcMeasurement())
+        .SetPassFailStrategy(new RangePassFail())
+        .ExecuteRun()
+        .ExecutePassFail();
 
     return 0;
 }

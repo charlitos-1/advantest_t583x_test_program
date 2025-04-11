@@ -14,8 +14,8 @@ public:
     TestItem();
     ~TestItem();
     TestItem &PrintTestItemMembers();
-    TestItem &setRunStrategy(RunStrategy *strategy);
-    TestItem &executeRun();
-    TestItem &setPassFailStrategy(PassFailStrategy *strategy);
-    TestItem &executePassFail();
+    TestItem &SetRunStrategy(RunStrategy *strategy);
+    TestItem &ExecuteRun();
+    TestItem &SetPassFailStrategy(PassFailStrategy *strategy);
+    TestItem &ExecutePassFail();
 };

@@ -21,7 +21,7 @@ TestItem &TestItem::PrintTestItemMembers()
     return *this;
 }
 
-TestItem &TestItem::setRunStrategy(RunStrategy *strategy)
+TestItem &TestItem::SetRunStrategy(RunStrategy *strategy)
 {
     if (run_strategy != nullptr)
     {
@@ -31,7 +31,7 @@ TestItem &TestItem::setRunStrategy(RunStrategy *strategy)
     return *this;
 }
 
-TestItem &TestItem::executeRun()
+TestItem &TestItem::ExecuteRun()
 {
     if (run_strategy != nullptr)
     {
@@ -44,7 +44,7 @@ TestItem &TestItem::executeRun()
     return *this;
 }
 
-TestItem &TestItem::setPassFailStrategy(PassFailStrategy *strategy)
+TestItem &TestItem::SetPassFailStrategy(PassFailStrategy *strategy)
 {
     if (pass_fail_strategy != nullptr)
     {
@@ -54,7 +54,7 @@ TestItem &TestItem::setPassFailStrategy(PassFailStrategy *strategy)
     return *this;
 }
 
-TestItem &TestItem::executePassFail()
+TestItem &TestItem::ExecutePassFail()
 {
     if (pass_fail_strategy != nullptr)
     {
